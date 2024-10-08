@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         
+        // Pelin oikea nimi
         String oikeaNimi = "Joonas";
         
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +15,6 @@ public class App {
 
             System.out.println("Arvaa nimi:");
             arvaus = scanner.nextLine();
-            
             arvauskerrat++;
 
             if (arvaus.equalsIgnoreCase(oikeaNimi)) {
@@ -23,7 +23,9 @@ public class App {
             } else {
                 System.out.println("Väärin! Yritä uudelleen.");
             }
+
         }
+            // lasketaan arvauskerrat yhteen
           if (arvauskerrat > 0) {
             System.out.println("Arvauksia tehtiin yhteensä: " + arvauskerrat);
         }
